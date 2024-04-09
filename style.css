@@ -210,3 +210,39 @@ i{
 .cancel-button:hover {
     background-color: #ffac33;
 }
+
+.dropdown-toggle::after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 5px 0 5px;
+    border-color: darkred transparent transparent transparent;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+.menu-item.dropdown > a.submenu-toggle::after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width:5px 0 5px 5px;
+    border-color: transparent transparent transparent #A52A ;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+.submenu-item.dropdown > a.submenu-toggle::after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-color: transparent transparent transparent #A52A;
+    margin-left: 5px;
+    vertical-align: middle;
+}
